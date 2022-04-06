@@ -9,12 +9,68 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet"
         href="css/libs.css" />
     <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content=" This for the Featured dreams ">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init("oZpaGg9nb07E3I33e");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_0y72a2t', 'template_swuptxk', this)
+                    .then(function() {
+                       alert('Thank for the message');
+                    }, function(error) {
+                        alert('An error occured');
+                    });
+            });
+        }
+    </script>
 
+
+<style>
+    .cover_m{
+
+        background-image: url('img/service/social-media-marketing.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 200px;
+    }
+    .cover_d{
+
+        background-image: url('img/service/responsive.png');
+        background-position: right top ;
+        background-repeat: no-repeat;
+        background-size: 200px;
+    }
+    .cover_w{
+
+background-image: url('img/service/software-development.png');
+background-position:  top;
+background-repeat: no-repeat;
+background-size: 200px;
+}
+ .cover_g{
+
+background-image: url('img/service/graphic-design.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 200px;
+}
+
+</style>
 </head>
 
 <body>
@@ -25,7 +81,7 @@
                 <div class="container-fluid p-0">
                     <div class="row align-items-center no-gutters" style="justify-content: space-between !important;">
                         <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
+                            <div class="logo-img ">
                                 <a href="index.html">
                                     <img src="img/logo.png" alt="" class="img-fluid">
                                 </a>
@@ -45,7 +101,7 @@
                             </div>
                         </div>
                        
-                        <div class="col-12">
+                        <div class="col-">
                             <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
                     </div>
@@ -55,7 +111,7 @@
     </header>
 
 
-    <div class="slider_area mt-4">
+    <div class="slider_area">
         <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
 
             <div class="container">
@@ -75,68 +131,13 @@
       
     </div>
 
-
-    <div class="service_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-70">
-                        <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s" data-wow-delay=".1s">Services</span>
-                      
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center wow fadeInLeft" data-wow-duration="1.2s"
-                        data-wow-delay=".4s">
-                        <div class="icon">
-                            <img src="img/service/social-media-marketing.png" width="56px" height="56px" class="img-fluid" alt="">
-                        </div>
-                        <h3>Digital <br> Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                        <div class="icon">
-                            <img src="img/service/responsive.png" class="img-fluid" width="56px" height="56px" alt="">
-                        </div>
-                        <h3>Resposive Web Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center wow fadeInUp" data-wow-duration="1.2s"
-                        data-wow-delay=".4s">
-                        <div class="icon">
-                            <img src="img/service/software-development.png" class="img-fluid" width="56px" height="56px"  alt="">
-                        </div>
-                        <h3>Wed Development</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="single_service text-center wow fadeInRight" data-wow-duration="1.2s"
-                        data-wow-delay=".4s">
-                        <div class="icon">
-                            <img src="img/service/graphic-design.png" class="img-fluid" width="56px" height="56px"  alt="">
-                        </div>
-                        <h3>Graphic <br> Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="about_area">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-lg-5 offset-lg-1">
                     <div class="about_info">
                         <div class="section_title white_text">
-                            <span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">About Us</span>
+                            <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s" data-wow-delay=".3s">About Us</span>
                             <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Empowering individuals
                             </h3>
                             <p class="mid_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Efficiently
@@ -155,13 +156,348 @@
             </div>
         </div>
     </div>
+    <div class="service_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-70">
+                        <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s" data-wow-delay=".1s">Services</span>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-3">
+                    <div class="single_service text-center wow fadeInLeft shadow" data-wow-duration="1.2s"
+                        data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="img/service/social-media-marketing.png" width="56px" height="56px" class="img-fluid" alt="">
+                        </div>
+                        <h3>Digital <br> Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-3">
+                    <div class="single_service text-center wow fadeInUp shadow"  data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="icon">
+                            <img src="img/service/responsive.png" class="img-fluid" width="56px" height="56px" alt="">
+                        </div>
+                        <h3>Resposive Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-3">
+                    <div class="single_service text-center wow fadeInUp shadow"  data-wow-duration="1.2s"
+                        data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="img/service/software-development.png" class="img-fluid" width="56px" height="56px"  alt="">
+                        </div>
+                        <h3>Wed Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-3">
+                    <div class="single_service text-center wow fadeInRight shadow" data-wow-duration="1.2s"
+                        data-wow-delay=".4s">
+                        <div class="icon">
+                            <img src="img/service/graphic-design.png" class="img-fluid" width="56px" height="56px"  alt="">
+                        </div>
+                        <h3>Graphic <br> Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="portfolio_image_area">
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+
+    <div class="digital_m cover_m" style="padding:50px ;">
+        <div class=""></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-70">
+                        <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s" data-wow-delay=".1s">Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos facere laboriosam eligendi, ullam corrupti ad excepturi vero quos, molestias sit vitae doloremque velit. Consequatur vitae sequi dignissimos eaque voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center">
+                    <div class="col-md-3" >
+                      <div class="card mb-4 rounded-2 shadow">
+                        <div class="card-header bg-info py-2">
+                          <h4 class="my-0 text-sm-center">*----*</h4>
+                        </div>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                          <ul class="list-unstyled mt-5 mb-5">
+                            <li class="p-1">lorem ipsum</li>
+                            <li class="p-1">2 GB of storage</li>
+                            <li class="p-1">Email support</li>
+                            <li class="p-1">Help center access</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div class="Responsive cover_d" style="padding:50px ;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-70">
+                        <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s" data-wow-delay=".1s">Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos facere laboriosam eligendi, ullam corrupti ad excepturi vero quos, molestias sit vitae doloremque velit. Consequatur vitae sequi dignissimos eaque voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center">
+                    <div class="col-md-3" >
+                      <div class="card mb-4 rounded-2 shadow">
+                        <div class="card-header bg-info py-2">
+                          <h4 class="my-0 text-sm-center">*----*</h4>
+                        </div>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                          <ul class="list-unstyled mt-5 mb-5">
+                            <li class="p-1">10 users included</li>
+                            <li class="p-1">2 GB of storage</li>
+                            <li class="p-1">Email support</li>
+                            <li class="p-1">Help center access</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div class="webdev cover_w" style="padding:50px ;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-70">
+                        <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s" data-wow-delay=".1s">Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos facere laboriosam eligendi, ullam corrupti ad excepturi vero quos, molestias sit vitae doloremque velit. Consequatur vitae sequi dignissimos eaque voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center">
+                    <div class="col-md-3" >
+                      <div class="card mb-4 rounded-2 shadow">
+                        <div class="card-header bg-info py-2">
+                          <h4 class="my-0 text-sm-center">*----*</h4>
+                        </div>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                          <ul class="list-unstyled mt-5 mb-5">
+                            <li class="p-1">10 users included</li>
+                            <li class="p-1">2 GB of storage</li>
+                            <li class="p-1">Email support</li>
+                            <li class="p-1">Help center access</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div class="graphic cover_g " style="padding:50px ;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-70">
+                        <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s" data-wow-delay=".1s">Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos facere laboriosam eligendi, ullam corrupti ad excepturi vero quos, molestias sit vitae doloremque velit. Consequatur vitae sequi dignissimos eaque voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center">
+                    <div class="col-md-3" >
+                      <div class="card mb-4 rounded-2 shadow">
+                        <div class="card-header bg-info py-2">
+                          <h4 class="my-0 text-sm-center">*----*</h4>
+                        </div>
+                        <div class="card-body">
+                          <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                          <ul class="list-unstyled mt-5 mb-5">
+                            <li class="p-1">10 users included</li>
+                            <li class="p-1">2 GB of storage</li>
+                            <li class="p-1">Email support</li>
+                            <li class="p-1">Help center access</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3" >
+                        <div class="card mb-4 rounded-2 shadow">
+                          <div class="card-header bg-info py-2">
+                            <h4 class="my-0 text-sm-center">*----*</h4>
+                          </div>
+                          <div class="card-body">
+                            <h1 class="card-title pricing-card-title">XXXCFA<small class="text-muted " style="font-size: initial;">/day</small></h1>
+                            <ul class="list-unstyled mt-5 mb-5">
+                              <li class="p-1">10 users included</li>
+                              <li class="p-1">2 GB of storage</li>
+                              <li class="p-1">Email support</li>
+                              <li class="p-1">Help center access</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    
+   
+
+    <div class="portfolio_image_area bg-dark text-white">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-90">
-                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Featured Works</h3>
+                        <h3 class="wow fadeInUp text-white-50" data-wow-duration="1s" data-wow-delay=".3s">Featured Works</h3>
                         <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Tour function information
                             without cross action media value quickly maximize timely deliverables.</p>
                     </div>
@@ -180,7 +516,6 @@
                             <div class="gear" id="gear4"></div>
                             <div class="title">
                                 <h3> Mobile App</h3>
-                                <!-- <a class="boxed-btn3" href="portfolio_details.html">View</a> -->
                             </div>
                         </div>
                     </div>
@@ -283,103 +618,6 @@
         </div>
     </div>
 
-    <div class="team_area ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb-90">
-                        <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Our Creative Team</h3>
-                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Tour function information
-                            without cross action media value quickly maximize timely deliverables.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="team_thumb">
-                            <img src="img/team/x1.png.pagespeed.ic.TiOXuLBYBu.webp" alt="">
-                            <div class="team_hover">
-                                <div class="hover_inner text-center">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_title text-center">
-                            <h3>Brandon Yeald</h3>
-                            <p>Founder & CEO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="team_thumb">
-                            <img src="img/team/x2.png.pagespeed.ic.1jXOYKUkHe.webp" alt="">
-                            <div class="team_hover">
-                                <div class="hover_inner text-center">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_title text-center">
-                            <h3>Calvin Anderson</h3>
-                            <p>Graphics Designer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                        <div class="team_thumb">
-                            <img src="img/team/x3.png.pagespeed.ic.VMDF7vdPsA.webp" alt="">
-                            <div class="team_hover">
-                                <div class="hover_inner text-center">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_title text-center">
-                            <h3>Roman Solo</h3>
-                            <p>Wordpress Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_team wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
-                        <div class="team_thumb">
-                            <img src="img/team/x4.png.pagespeed.ic.K9RHZ8EIzF.webp" alt="">
-                            <div class="team_hover">
-                                <div class="hover_inner text-center">
-                                    <ul>
-                                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_title text-center">
-                            <h3>Yeald Kin</h3>
-                            <p>Software Engineer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <div class="testimonial_area ">
         <div class="container">
             <div class="row">
@@ -467,22 +705,22 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                        <input type="text" placeholder="Your Name">
+                                        <input type="text" placeholder="Your Name" required> 
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                                        <input type="email" placeholder="Email">
+                                        <input type="email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                        <input type="text" placeholder="Subject">
+                                        <input type="text" placeholder="Subject" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                                        <textarea name="" id="" cols="30" placeholder="Message" rows="10"></textarea>
+                                        <textarea name="" id="" cols="30" placeholder="Message" rows="10" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -502,14 +740,7 @@
         <div class="footer_top">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer_logo wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                            <a href="index.html">
-                                <img src="data:image/webp;base64,UklGRpIDAABXRUJQVlA4TIUDAAAvgsAIEGeioI2kqMcjAQkIwb8mbm04hCRJkLIuVuEADuX9mX7bQNo22f1rft3Gtq0q3/+P3CVW6JNe6EEb8BbI3LlvHue9gEJqRoCBwPAD4YcvfvjgjRceuOGE4/uZnZeE3kc3DncF8kw+P5+dMfRxGXD6TwP1xcasKxgPB1EFOVyh3D9AgBuJJz7ggVckERAECACMp9XIjQpNpiADcPyLNyAWKqwgMxoh3Gtr7ncTUNe2PW0jvfPKlm3Z+iQNM5NmQsPMDOd/QtZnu7k6tPsnov8TgP9LXnvw/cgv733O92/94s6scs4vP52ZFkUkHnrHHn0+qrzOxbsfr2q+4riSwmBt2IPO2v37mvP2fOH0i1LOp5SBpLUVyX7kSL8Hlkz7dm2dc86PbwN4ktVXKEeyDgAGkukwe5+Ld96cvZDV1RnFkR5jRzokaUknEkqhd30AkkgCIBKRvItRatKLREAkKFEkAUkkAaF3fZhxZlXK+dJOew+1IVMhiQQIy/XIVxwbEdIDIDtvSO9Y7gCyVhzpASF9sBwbP+l1Vh9+zer6mubIUCgGW5G1tS2AgWTVthXZajVJ+sEa0lrbL+QMq6atSfYTTr/Qrqy1r9A9WcUJgCM9xoE0AwD0pEYzJACwZMJ4EbJPAMSQXnuS1Vfvs7o7NgGWZOPTApb0KA5TPIoH5FAMZK1cyOrq5Eq7gKmp49gOcxJpUwm1VqV9qFIJLRkKx3ba+1dZfYKZaWgMSROmCemgOq3GPnRQB3IofM3q+kpWX5yeM/YNyTjJk17zWrsXThOyG11ba18fam+xbE+2k2TSoHV70U1yo/dZ3V3K6ur6QiDrOZ3WHUC9RKP1pAdwZqVd3mnvMb2zNpXMDBgarToASyq1xqRYMgJ4ldUnX7O6vjaHdIVAttMc2ZVaHoAjXUE4oSn1ZAPgVFZfnHimfcPMaEgHQAxNAODJJo1SRdoIxIZmXke6QjKkAzCYCYY2ArEjTQDwUHuLM59eFnbH5mAwJGtDmh7jiiRrAMGQpCGNmxc57gAMJGlIWm2oWTYC4GJWV9cB3Lo/uoD5sTUkTRtQjI0pIbWGpGmjzINYBcGSZCNO88kZkqYNAPBU+4Dxke+b/ATLJglYOIhgD0Ui1BGAIILy2XfPC+trBeD4jxsLHaLK9JuPR1/x61wEOH8v74796vDzyzn88n6xvwXBWvnl/Z4CAA=="
-                                    alt="">
-                            </a>
-                        </div>
-                    </div>
+                   
                     <div class="col-xl-7 col-lg-7 col-md-9">
                         <div class="menu_links">
                             <ul>
@@ -520,10 +751,7 @@
                                         href="#">Services</a></li>
                                 <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s"
                                         href="#">Portfolio</a></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".8s"
-                                        href="#">Pages</a></li>
-                                <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s"
-                                        href="#">Blog</a></li>
+                                
                                 <li><a class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.1s"
                                         href="#">Contact</a></li>
                             </ul>
@@ -538,27 +766,19 @@
                                             class="fa fa-twitter"></i> </a></li>
                                 <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="#"> <i
                                             class="fa fa-instagram"></i> </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s" href="#"> <i
-                                            class="fa fa-google-plus"></i> </a></li>
+                               
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>col-12
         </div>
         <div class="copy-right_text">
             <div class="container">
                 <div class="footer_border"></div>
                 <div class="row">
                     <div class="col-xl-12">
-                        <p class="copy_right text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
-
-                            <!-- Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a> -->
-
-                        </p>
+                     
                     </div>
                 </div>
             </div>
@@ -594,30 +814,6 @@
     
    
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("oZpaGg9nb07E3I33e");
-    })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
 </body>
 
 </html>

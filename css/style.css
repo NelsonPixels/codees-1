@@ -356,8 +356,9 @@ h3 {
     .mobile_menu {
         position: absolute;
         right: 0;
-        width: 100%;
-        z-index: 9
+        width: 80%;
+        margin-top: -61px;
+        z-index: 9;
     }
 }
 
