@@ -6,7 +6,10 @@ body {
     font-weight: normal;
     font-style: normal
 }
-
+:root{
+    --primary_c :#1a7deb;
+    --secondary_c:#df3c2e;
+}
 .img {
     max-width: 100%;
     -webkit-transition: .3s;
@@ -208,7 +211,7 @@ h3 {
 
 .owl-carousel:hover .owl-nav div:hover {
     color: #fff;
-    background: #F9334F;
+    background: var(--secondary_c);
     border: 1px solid transparent
 }
 
@@ -225,17 +228,17 @@ h3 {
     font-size: 16px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #F9334F;
+    border: 1px solid var(--primary_c);
     text-align: center;
-    color: #F9334F !important;
+    color: var(--primary_c) !important;
     text-transform: uppercase;
     cursor: pointer
 }
 
 .boxed-btn:hover {
-    background: #F9334F;
+    background: var(--secondary_c);
     color: #fff !important;
-    border: 1px solid #F9334F 
+    border: 1px solid var(--secondary_c) 
 }
 
 .boxed-btn:focus {
@@ -243,7 +246,7 @@ h3 {
 }
 
 .boxed-btn3 {
-    background: #F9334F;
+    background: var(--primary_c);
     color: #fff;
     display: inline-block;
     padding: 12px 33px;
@@ -266,8 +269,8 @@ h3 {
 }
 
 .boxed-btn3:hover {
-    border: 1px solid #F9334F;
-    color: #F9334F !important;
+    border: 1px solid var(--secondary_c);
+    color: var(--secondary_c) !important;
     background: transparent
 }
 
@@ -280,7 +283,7 @@ h3 {
     z-index: 3;
     font-size: 14px;
     font-weight: 500;
-    color: #F9334F;
+    color: var(--primary_c);
     text-transform: capitalize;
     margin-bottom: 19px;
     display: block;
@@ -490,7 +493,7 @@ h3 {
 }
 
 .header-area .main-header-area .main-menu ul li a:hover {
-    color:#F9334F !important 
+    color:var(--secondary_c) !important 
 }
 
 .header-area .main-header-area .main-menu ul li .submenu {
@@ -531,7 +534,7 @@ h3 {
 }
 
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-    color:#F9334F 
+    color:var(--secondary_c) 
 }
 
 .header-area .main-header-area .main-menu ul li:hover>.submenu {
@@ -600,7 +603,7 @@ h3 {
     content: "";
     height: 3px;
     width: 100%;
-    background: #F9334F;
+    background: var(--primary_c);
     bottom: 0;
     left: 0
 }
@@ -857,7 +860,7 @@ h3 {
 }
 
 .footer .footer_top .menu_links ul li a:hover {
-    color:#F9334F 
+    color:var(--secondary_c) 
 }
 
 .footer .copy-right_text {
@@ -884,7 +887,7 @@ h3 {
 }
 
 .footer .copy-right_text .copy_right a {
-    color:#F9334F 
+    color:var(--primary_c) 
 }
 
 .footer .socail_links {
@@ -929,8 +932,8 @@ h3 {
 
 .footer .socail_links ul li a:hover {
     color: #fff !important;
-    background: #F9334F;
-    border: 1px solid #F9334F 
+    background: var(--secondary_c);
+    border: 1px solid var(--secondary_c) 
 }
 
 .bradcam_bg_1 {
@@ -1155,7 +1158,7 @@ h3 {
 }
 
 .service_area .single_service:hover {
-    border: 2px solid #08bcf7 
+    border: 2px solid var(--primary_c) 
 }
 
 .portfolio_image_area {
@@ -1240,7 +1243,7 @@ h3 {
 
 .portfolio_image_area .single_Portfolio .portfolio_hover span {
     font-size: 14px;
-    color: #F9334F;
+    color: var(--primary_c);
     font-weight: 400;
     font-family: "Roboto", sans-serif
 }
@@ -1254,8 +1257,8 @@ h3 {
 }
 
 .portfolio_image_area .single_Portfolio .portfolio_hover .boxed-btn3:hover {
-    border: 1px solid #F9334F !important;
-    color: #F9334F !important;
+    border: 1px solid var(--primary_c) !important;
+    color: var(--primary_c) !important;
     background: #fff !important
 }
 
@@ -1355,14 +1358,14 @@ h3 {
     text-align: center;
     font-size: 14px;
     color: #fff;
-    border: 1px solid #F9334F;
+    border: 1px solid var(--primary_c);
     display: inline-block;
-    background:#F9334F 
+    background:var(--primary_c) 
 }
 
 .team_area .single_team .team_thumb .team_hover .hover_inner ul li a:hover {
-    background: #F9334F;
-    border: 1px solid #F9334F;
+    background: var(--primary_c);
+    border: 1px solid var(--primary_c);
     color: #fff
 }
 
@@ -1548,7 +1551,7 @@ h3 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background: #F9334F;
+    background: var(--secondary_c);
     font-size: 14px;
     text-align: center;
     line-height: 60px;
@@ -1585,7 +1588,7 @@ h3 {
 
 .our_mission_area .mission_text h4 {
     font-size: 24px;
-    color: #F9334F;
+    color: var(--primary_c);
     font-weight: 400;
     font-family: "Roboto", sans-serif
 }
@@ -1668,7 +1671,7 @@ h3 {
 }
 
 .portfolio_details_banner .details_info .details_links .single_details .social_links ul li a:hover {
-    color:#F9334F 
+    color:var(--secondary_c) 
 }
 
 .portfolio_details_wrap {
@@ -2947,7 +2950,7 @@ h6 {
 
 .blog_area a:hover,
 .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #F9334F 0%, #F9334F 99%);
+    background: -webkit-linear-gradient(131deg, var(--primary_c) 0%, var(--primary_c) 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -3080,7 +3083,7 @@ h6 {
 }
 
 .blog_details a:hover {
-    color:#F9334F 
+    color:var(--primary_c) 
 }
 
 .blog_details h2 {
@@ -3138,7 +3141,7 @@ h6 {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #F9334F;
+    background-color: var(--primary_c);
     padding: 8px 15px;
     border-radius: 5px
 }
@@ -3334,7 +3337,7 @@ h6 {
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #F9334F;
+    background: var(--primary_c);
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;
@@ -3525,7 +3528,7 @@ h6 {
 }
 
 .single-post-area .blog-author a:hover {
-    color:#F9334F 
+    color:var(--primary_c) 
 }
 
 .single-post-area .blog-author p {
