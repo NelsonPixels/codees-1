@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <meta name="description" content=" This for the Featured dreams "> -->
     <meta name="title" content="Codees">
-    <meta name="description" content="Use powerful tools such as website to improve your visibility,  Give to us the development of your brand.We also provide other services such a">
+    <meta name="description"
+        content="Use powerful tools such as website to improve your visibility,  Give to us the development of your brand.We also provide other services such a">
     <meta name="keywords" content="improve my brand,get visibility on the internet, ">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -80,6 +81,44 @@
             background-repeat: no-repeat;
             background-size: 200px;
         }
+
+        .typeText::after {
+            content: "|";
+            /* animation: blink 1s step-end infinite; */
+            animation: none;
+        }
+
+        .showAnim.typeText::after {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .goog-logo-link {
+            display: none !important;
+        }
+
+        .goog-te-gadget {
+            color: transparent !important;
+        }
+
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0px !important;
+        }
     </style>
 </head>
 
@@ -94,12 +133,13 @@
                             <div class="logo-img ">
                                 <a href="index.html">
                                     <img src="img/logo.png" alt="" class="img-fluid">
-                                    <span class="text-white-50 mt-auto" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CODEES</span>
+                                    <span class="text-white-50 mt-auto"
+                                        style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">CODEES</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4"></div>
-                        <div class="col-xl-6 col-lg-6">
+                        <!-- <div class="col-xl-2 col-lg-2"></div> -->
+                        <div class="col-xl-10 col-lg-10">
                             <div class="main-menu  d-none d-lg-block text-center">
                                 <nav>
                                     <ul id="navigation">
@@ -109,6 +149,7 @@
                                         <li><a href="#work">How we Work</a></li>
                                         <li><a href="#contact">Contact</a></li>
                                     </ul>
+
                                 </nav>
                             </div>
                         </div>
@@ -120,6 +161,7 @@
                 </div>
             </div>
         </div>
+
     </header>
 
 
@@ -130,8 +172,7 @@
                 <div class="row align-items-center justify-content-start">
                     <div class="col-lg-10 col-md-10">
                         <div class="slider_text">
-                            <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">
-                              We Optimize Our Products To Satifsfy Your Clients 
+                            <h3 class="wow typeText fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">
                             </h3>
 
                         </div>
@@ -186,21 +227,31 @@
 
                 <div class="col-xl-3 col-md-3">
                     <a href="#digital">
-                    <div class="single_service text-center wow fadeInLeft shadow" data-wow-duration="1.2s"
-                        data-wow-delay=".4s">
-                        <div class="icon">
-                            <img src="img/service/social-media-marketing.png" width="56px" height="56px"
-                                class="img-fluid" alt="">
+                        <div class="single_service text-center wow fadeInLeft shadow" data-wow-duration="1.2s"
+                            data-wow-delay=".4s">
+                            <div class="icon">
+                                <img src="img/service/social-media-marketing.png" width="56px" height="56px"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3>Digital <br> Marketing</h3>
+                            <p>Get your products advertised online and known world-wide</p>
+                            <div id="google_translate_element"></div>
+
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                                }
+                            </script>
+
+                            <script type="text/javascript"
+                                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                         </div>
-                        <h3>Digital <br> Marketing</h3>
-                        <p>Get your products advertised online and known world-wide</p>
-                    </div>
                     </a>
                 </div>
 
-                
-                    <div class="col-xl-3 col-md-3">
-                        <a href="#Responsive">
+
+                <div class="col-xl-3 col-md-3">
+                    <a href="#Responsive">
                         <div class="single_service text-center wow fadeInUp shadow" data-wow-duration="1s"
                             data-wow-delay=".3s">
                             <div class="icon">
@@ -210,13 +261,13 @@
                             <h3>Resposive Web Design</h3>
                             <p>Design responsive web sites for your personnel projects</p>
                         </div>
-                        </a>
-                    </div>
-               
+                    </a>
+                </div>
 
-               
-                    <div class="col-xl-3 col-md-3">
-                        <a href="#webdev">
+
+
+                <div class="col-xl-3 col-md-3">
+                    <a href="#webdev">
                         <div class="single_service text-center wow fadeInUp shadow" data-wow-duration="1.2s"
                             data-wow-delay=".4s">
                             <div class="icon">
@@ -226,12 +277,12 @@
                             <h3>Wed Development</h3>
                             <p>Scalable and interactive web applications for all online folks</p>
                         </div>
-                        </a>
-                    </div>
-                
-               
-                    <div class="col-xl-3 col-md-3">
-                        <a href="#design">
+                    </a>
+                </div>
+
+
+                <div class="col-xl-3 col-md-3">
+                    <a href="#design">
                         <div class="single_service text-center wow fadeInRight shadow" data-wow-duration="1.2s"
                             data-wow-delay=".4s">
                             <div class="icon">
@@ -241,20 +292,20 @@
                             <h3>Graphic <br> Design</h3>
                             <p>Awesome graphics to showcase the greatness of your idea</p>
                         </div>
-                        </a>
-                    </div>
-                
+                    </a>
+                </div>
+
 
             </div>
         </div>
 
     </div>
 
-    <div class="container" id="digital" >
+    <div class="container" id="digital">
         <hr>
     </div> <br> <br>
 
-    <div class="digital_m "  style="padding:50px ;">
+    <div class="digital_m " style="padding:50px ;">
         <div class=""></div>
         <div class="container">
             <div class="row">
@@ -263,7 +314,8 @@
                         <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s"
                             data-wow-delay=".1s">Digital Marketing</span>
                         <p>
-                            In case you want your different products advertised over the web, Don't worry. Just subscribe to one of our Panels . Here are our subscription panels you may optimize for
+                            In case you want your different products advertised over the web, Don't worry. Just
+                            subscribe to one of our Panels . Here are our subscription panels you may optimize for
                         </p>
                     </div>
                 </div>
@@ -338,7 +390,10 @@
                         <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s"
                             data-wow-delay=".1s">Responsive Web design</span>
                         <p>
-                            We provide responsive, interactive and awesome web designs for developpers wishing to save time in their various project developments or show case websites for you folks involved for business. Not only that they provide an immersive UI and UX, but they are made at a very fast pace
+                            We provide responsive, interactive and awesome web designs for developpers wishing to save
+                            time in their various project developments or show case websites for you folks involved for
+                            business. Not only that they provide an immersive UI and UX, but they are made at a very
+                            fast pace
                         </p>
                     </div>
                 </div>
@@ -400,13 +455,13 @@
             </div>
 
         </div>
-  
+
     </div>
     </div>
     <div class="container" id="webdev">
         <hr>
     </div> <br> <br>
-    <div class="webdev"  style="padding:50px ;">
+    <div class="webdev" style="padding:50px ;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -414,7 +469,9 @@
                         <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s"
                             data-wow-delay=".1s">Web development</span>
                         <p>
-                            Dynamic and responsive web applications, design to accomodate to your needs and provide a relative fluid and simple manipulation scheme to ensure reliablility, speed and scalability. We optimize for better performance over the whole market
+                            Dynamic and responsive web applications, design to accomodate to your needs and provide a
+                            relative fluid and simple manipulation scheme to ensure reliablility, speed and scalability.
+                            We optimize for better performance over the whole market
                         </p>
                     </div>
                 </div>
@@ -478,12 +535,12 @@
         </div>
     </div>
     </div>
-   
+
     <div class="container" id="design">
         <hr>
     </div> <br> <br>
 
-    <div class="graphic "  style="padding:50px ;">
+    <div class="graphic " style="padding:50px ;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -491,7 +548,8 @@
                         <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s"
                             data-wow-delay=".1s">Graphic Design</span>
                         <p>
-                            What's better than awesome graphics to show how genuine an idea can be ? We provide you with awesome graphics for all events, business activities, occassions and more.
+                            What's better than awesome graphics to show how genuine an idea can be ? We provide you with
+                            awesome graphics for all events, business activities, occassions and more.
                         </p>
                     </div>
                 </div>
@@ -565,7 +623,8 @@
                     <div class="section_title text-center mb-90">
                         <h3 class="wow fadeInUp text-white-50" data-wow-duration="1s" data-wow-delay=".3s">Our
                             Works</h3>
-                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">These are some of the projects we have been working on</p>
+                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">These are some of the
+                            projects we have been working on</p>
                     </div>
                 </div>
             </div>
@@ -573,7 +632,7 @@
                 <div class="col-lg-8 col-md-12">
                     <div class="single_Portfolio wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                         <div class="portfolio_thumb">
-                            <img src="img/portfolio/x1.png.pagespeed.ic.IzZ1B9XFxR.webp" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="portfolio_hover">
                             <div class="gear" id="gear1"></div>
@@ -589,7 +648,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_Portfolio wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                         <div class="portfolio_thumb">
-                            <img src="img/portfolio/x2.png.pagespeed.ic.fD4k0tYhYF.webp" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="portfolio_hover">
                             <div class="gear" id="gear1"></div>
@@ -606,7 +665,7 @@
                 <div class="col-lg-4 col-md-6 col-lg-4">
                     <div class="single_Portfolio wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <div class="portfolio_thumb">
-                            <img src="img/portfolio/x3.png.pagespeed.ic.ZVIuSK84PB.webp" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="portfolio_hover">
                             <div class="gear" id="gear1"></div>
@@ -623,7 +682,7 @@
                 <div class="col-lg-4 col-md-6 col-lg-4">
                     <div class="single_Portfolio wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <div class="portfolio_thumb">
-                            <img src="img/portfolio/x4.png.pagespeed.ic.fMzUNBe66J.webp" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="portfolio_hover">
                             <div class="gear" id="gear1"></div>
@@ -641,7 +700,7 @@
                 <div class="col-lg-4 col-md-6 col-lg-4">
                     <div class="single_Portfolio wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
                         <div class="portfolio_thumb">
-                            <img src="img/portfolio/x5.png.pagespeed.ic.5evR283Q6z.webp" alt="">
+                            <img src="" alt="">
                         </div>
                         <div class="portfolio_hover">
                             <div class="gear" id="gear1"></div>
@@ -666,7 +725,8 @@
                     <div class="work_info">
                         <div class="section_title">
                             <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">How we work</h3>
-                            <p class="mid_text wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">“Success is the result of a dream worked out to get an idea and put in action"</p>
+                            <p class="mid_text wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">“Success is
+                                the result of a dream worked out to get an idea and put in action"</p>
                             <p class="last_p wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
                                 Click to learn more
                             </p>
@@ -692,7 +752,7 @@
                         <div class="single_carousel">
                             <div class="single_testmonial text-center">
                                 <div class="quote">
-                                    <img src="img/testmonial/quote.svg" alt="">
+                                    <img src="" alt="">
                                 </div>
                                 <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
                                     sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
@@ -701,7 +761,7 @@
                                 </p>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="img/testmonial/xthumb.png.pagespeed.ic.4i_N8GSJ3y.webp" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     <h3>Robert Thomson</h3>
                                     <span>Business Owner</span>
@@ -711,7 +771,7 @@
                         <div class="single_carousel">
                             <div class="single_testmonial text-center">
                                 <div class="quote">
-                                    <img src="img/testmonial/quote.svg" alt="">
+                                    <img src="" alt="">
                                 </div>
                                 <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
                                     sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
@@ -720,7 +780,7 @@
                                 </p>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="img/testmonial/xthumb.png.pagespeed.ic.4i_N8GSJ3y.webp" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     <h3>Robert Thomson</h3>
                                     <span>Business Owner</span>
@@ -730,7 +790,7 @@
                         <div class="single_carousel">
                             <div class="single_testmonial text-center">
                                 <div class="quote">
-                                    <img src="img/testmonial/quote.svg" alt="">
+                                    <img src="" alt="">
                                 </div>
                                 <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
                                     sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
@@ -739,7 +799,7 @@
                                 </p>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="img/testmonial/xthumb.png.pagespeed.ic.4i_N8GSJ3y.webp" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     <h3>Robert Thomson<id="contact-form" /h3>
                                             <span>Business Owner</span>
@@ -758,7 +818,9 @@
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-90">
                         <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">Get in Touch</h3>
-                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Any query ? Leave us an email OR contact us via the given phone number and don't forget to subscribe to our different media chennels to see our latest works</p>
+                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Any query ? Leave us an
+                            email OR contact us via the given phone number and don't forget to subscribe to our
+                            different media chennels to see our latest works</p>
                     </div>
                 </div>
             </div>
@@ -809,12 +871,12 @@
 
                     <div class="col-xl-7 col-lg-7 wow fadeInUp col-md-9">
                         <p class="bold">Phone number :</p>
-                            <p >(+237) 655 512 345</p>
-                             <p >(+237) 651 708 818</p>
-                              <p >(+237) 620 181 113</p>
-                              <p>codees@gmail.com</p>
-                        </div>
-                        
+                        <p>(+237) 655 512 345</p>
+                        <p>(+237) 651 708 818</p>
+                        <p>(+237) 620 181 113</p>
+                        <p>codees@gmail.com</p>
+                    </div>
+
                     <div class="col-lg-3 col-md-12">
                         <div class="socail_links">
                             <ul>
@@ -836,8 +898,8 @@
                 <div class="footer_border"></div>
                 <div class="row">
                     <div class="col-xl-12 text-center text-white-50">
-                            &copy;Codees 2022
-                            <div class="fa fa-caret-up"></div>
+                        &copy;Codees 2022
+                        <div class="fa fa-caret-up"></div>
                     </div>
                 </div>
             </div>
@@ -879,6 +941,49 @@
     <script>eval(mod_pagespeed_jqHbU4vZu_);</script>
 
 
+    <script>
+
+        var typeText = document.querySelector(".typeText")
+        var textToBeTyped = "We Optimize Our Products To Satifsfy Your Clients"
+        var index = 0, isAdding = true
+
+        function playAnim() {
+            setTimeout(function () {
+                // set the text of typeText to a substring of the text to be typed using index.
+                typeText.innerText = textToBeTyped.slice(0, index)
+                if (isAdding) {
+                    // adding text
+                    if (index > textToBeTyped.length) {
+                        // no more text to add
+                        isAdding = false
+                        //break: wait 2s before playing again
+                        setTimeout(function () {
+                            playAnim()
+                        }, 2000)
+                        return
+                    } else {
+                        // increment index by 1
+                        index++
+                    }
+                } else {
+                    // removing text
+                    if (index === 0) {
+                        // no more text to remove
+                        isAdding = true
+                    } else {
+                        // decrement index by 1
+                        index--
+                    }
+                }
+                // call itself
+                playAnim()
+            }, 120)
+        }
+        // start animation
+        playAnim()
+
+
+    </script>
 
 </body>
 
