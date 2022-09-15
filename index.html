@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CD</title>
+    <title>Codees</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -26,23 +26,23 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init("oZpaGg9nb07E3I33e");
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('vqkNuLMy339rAXBa2');
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
-                emailjs.sendForm('service_0y72a2t', 'template_swuptxk', this)
-                    .then(function () {
-                        alert('Thank for the message');
-                    }, function (error) {
-                        alert('An error occured');
+                emailjs.sendForm('service_1oqwqrm', 'contact_23df4', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED', error);
                     });
             });
         }
@@ -52,7 +52,13 @@
         ul {
             margin: 0;
             padding: 0;
-            list-style: none;
+                list-style: none;
+            
+        }
+        @media screen and (max-width:992px){
+            .slicknav_menu ul{
+                background-color: black;
+            }
         }
 
         .bg-gray {
@@ -311,6 +317,10 @@
         body {
             top: 0px !important;
         }
+        .mfp-close-btn-in .mfp-close{
+            color: #fff;
+    font-size: xxx-large;
+        }
     </style>
 </head>
 
@@ -334,7 +344,7 @@
                         <div class="col-xl-10 col-lg-10">
                             <div class="main-menu  d-none d-lg-block text-center">
                                 <nav>
-                                    <ul id="navigation">
+                                    <ul  id="navigation">
                                         <li><a class="active" href="#">Home</a></li>
                                         <li><a href="#about">About Us</a></li>
                                         <li><a href="#service">Services</a></li>
@@ -384,19 +394,21 @@
                         <div class="section_title white_text">
                             <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s"
                                 data-wow-delay=".3s">About Us</span>
-                            <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Empowering individuals
+                            <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">We are CODEES
                             </h3>
-                            <p class="mid_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Efficiently
-                                unleash cross-media tour function information without cross action media value. Quickly
-                                maximize timely deliverables for real-time schemas. Lorem ipsum dolor sit,
-                                amet consectetur adipisicing elit.
-                                Assumenda aliquam blanditiis eligendi, consequuntur quae aut. Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Deserunt vitae amet nihil? Ea quasi labore perferendis
-                                consequuntur minus a
-                                illo saepe sed? Nobis consequatur placeat soluta modi
-                                tenetur, reprehenderit perferendis!</p>
-                            <p class="last_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">“Function
-                                information without cross action media value.</p>
+                            <p class="mid_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                A young startup of the late 20's whose main objective is to provide high quality software and robust systems.
+                                Hence improve on the digitally growing community, contribute to increase in efficiency on how we perform our day-to-day activities and have a powerful impact on your flourishing businesses. 👍
+                            
+                            </p>
+                            <p class="last_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                Also, we propose to you, Entrepreneurs, Freelancers and All of you folks with an idea to create a digital community for your idea / Business from end to end.
+                               
+                            </p>
+                            <p class="last_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
+                                "There's something worst than not have succeeded, It is not to have tried."
+                                <small> ##Nelson_Mandela</small>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -427,16 +439,7 @@
                             </div>
                             <h3>Digital <br> Marketing</h3>
                             <p>Get your products advertised online and known world-wide</p>
-                            <div id="google_translate_element"></div>
-
-                            <script type="text/javascript">
-                                function googleTranslateElementInit() {
-                                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-                                }
-                            </script>
-
-                            <script type="text/javascript"
-                                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            
                         </div>
                     </a>
                 </div>
@@ -467,7 +470,7 @@
                                     height="56px" alt="">
                             </div>
                             <h3>Wed Development</h3>
-                            <p>Scalable and interactive web applications for all online folks</p>
+                            <p>Dynamic web applications for all your projects and businesses</p>
                         </div>
                     </a>
                 </div>
@@ -507,7 +510,7 @@
                             data-wow-delay=".1s">Digital Marketing</span>
                         <p>
                             In case you want your different products advertised over the web, Don't worry. Just
-                            subscribe to one of our Panels . Here are our subscription panels you may optimize for
+                            subscribe to one of our proposals . Here are pre-defined standards you may optimize for
                         </p>
                     </div>
                 </div>
@@ -518,7 +521,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Your business can significantly increase reach.
                             </p>
                         </div>
                     </div>
@@ -528,7 +531,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                It is easy to track and monitor your digital campaigns.
                             </p>
                         </div>
                     </div>
@@ -538,7 +541,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Your brand can provide a more interactive experience through digital marketing channels.
                             </p>
                         </div>
                     </div>
@@ -548,7 +551,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Your competitors are doing it!
                             </p>
                         </div>
                     </div>
@@ -572,8 +575,8 @@
                             data-wow-delay=".1s">Responsive Web design</span>
                         <p>
                             We provide responsive, interactive and awesome web designs for developpers wishing to save
-                            time in their various project developments or show case websites for you folks involved for
-                            business. Not only that they provide an immersive UI and UX, but they are made at a very
+                            time in their various project developments or show case websites for you folks involved in
+                            business activities. Not only that they provide an immersive UI and UX, but they are made at a very
                             fast pace
                         </p>
                     </div>
@@ -585,7 +588,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Boosts Search Engine Optimisation (SEO)
                             </p>
                         </div>
                     </div>
@@ -595,7 +598,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Improve online user experience
                             </p>
                         </div>
                     </div>
@@ -605,7 +608,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Promote link sharing across multiple devices
                             </p>
                         </div>
                     </div>
@@ -615,7 +618,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Website becomes highly accessible
                             </p>
                         </div>
                     </div>
@@ -637,8 +640,8 @@
                         <span class="wow fadeInUp" style="font-size: 35px;" data-wow-duration="1s"
                             data-wow-delay=".1s">Web development</span>
                         <p>
-                            Dynamic and responsive web applications, design to accomodate to your needs and provide a
-                            relative fluid and simple manipulation scheme to ensure reliablility, speed and scalability.
+                            Dynamic, Interactive and responsive web applications, design to accomodate to your needs and provide a
+                            relative fluid and simple manipulation scheme to ensure reliablility, speed and scalability on any platform.
                             We optimize for better performance over the whole market
                         </p>
                     </div>
@@ -650,7 +653,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Good responsive showcase websites
                             </p>
                         </div>
                     </div>
@@ -660,7 +663,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Web maintainance and web hosting
                             </p>
                         </div>
                     </div>
@@ -670,7 +673,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Single and multiple web pages at your comfort
                             </p>
                         </div>
                     </div>
@@ -680,7 +683,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Custom and sharp precision building of your web pages
                             </p>
                         </div>
                     </div>
@@ -705,8 +708,7 @@
                             data-wow-delay=".1s">Graphic Design</span>
                         <p>
                             What's better than awesome graphics to show how genuine an idea can be ? We provide you with
-                            awesome graphics for all events, business activities, occassions and more.
-                        </p>
+                            awesome graphics for all events, business activities, occassions and more. From web content passing through flyers to high resolution posters, we are up to the task.                        </p>
                     </div>
                 </div>
             </div>
@@ -716,7 +718,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Brand Identity and logo design
                             </p>
                         </div>
                     </div>
@@ -726,7 +728,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Packaging Design
                             </p>
                         </div>
                     </div>
@@ -736,7 +738,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Web and mobile design
                             </p>
                         </div>
                     </div>
@@ -746,7 +748,7 @@
                     <div class="col-md-7  equal-height">
                         <div class="item">
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Layout and printing
                             </p>
                         </div>
                     </div>
@@ -775,7 +777,7 @@
                         </div>
                         <div class="video_watch d-flex align-items-center">
                             <div class="play_btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                                <a href="https://www.youtube.com/watch?v=m4-HM_sCvtQ" class="video_icon popup-video"> <i
+                                <a href="https://www.youtube.com/watch?v=t3cIga5K6Lg" class="video_icon popup-video"> <i
                                         class="fa fa-play"></i> </a>
                             </div>
                             <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".7s"> Watch Video</span>
@@ -796,16 +798,35 @@
                                 <div class="quote">
                                     <img src="" alt="">
                                 </div>
-                                <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
-                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
+                                <p>Growth is never by mere change; it's the result of force working together <br>
+                                    Imagination is everything. It is the preview of life’s coming attractions.
                                     <br>
-                                    Fusce ac mattis nulla. Morbi eget ornare dui.
+                                    Just do it
                                 </p>
                                 <div class="testmonial_author">
                                     <div class="thumb">
                                         <img src="" alt="">
                                     </div>
-                                    <h3>Robert Thomson</h3>
+                                    <h3></h3>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="single_testmonial text-center">
+                                <div class="quote">
+                                    <img src="" alt="">
+                                </div>
+                                <p>Almost everything worthwhile carries with it some sort of risk, <br>
+                                    whether it’s starting a new business, whether it’s leaving home,<br> 
+                                    whether it’s getting married, or whether it’s flying into space <br>
+                                    <br>
+                                </p>
+                                <div class="testmonial_author">
+                                    <div class="thumb">
+                                        <img src="" alt="">
+                                    </div>
+                                    <h3>Milles willer</h3>
                                     <span>Business Owner</span>
                                 </div>
                             </div>
@@ -815,36 +836,16 @@
                                 <div class="quote">
                                     <img src="" alt="">
                                 </div>
-                                <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
-                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
-                                    <br>
-                                    Fusce ac mattis nulla. Morbi eget ornare dui.
+                                <p>The real test is not whether you avoid this failure, because you won’t.<br>
+                                    It’s whether you let it harden or shame you into inaction, or whether you learn from it;<br>
+                                    whether you choose to persevere. <br>
                                 </p>
                                 <div class="testmonial_author">
                                     <div class="thumb">
                                         <img src="" alt="">
                                     </div>
-                                    <h3>Robert Thomson</h3>
-                                    <span>Business Owner</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="single_testmonial text-center">
-                                <div class="quote">
-                                    <img src="" alt="">
-                                </div>
-                                <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br>
-                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
-                                    <br>
-                                    Fusce ac mattis nulla. Morbi eget ornare dui.
-                                </p>
-                                <div class="testmonial_author">
-                                    <div class="thumb">
-                                        <img src="" alt="">
-                                    </div>
-                                    <h3>Robert Thomson<id="contact-form" /h3>
-                                            <span>Business Owner</span>
+                                    <h3>Barack Obama<id="contact-form" /h3>
+                                            <span></span>
                                 </div>
                             </div>
                         </div>
@@ -872,14 +873,15 @@
                         <form id="contact-form">
                             <input type="hidden" name="contact_number">
                             <div class="row">
+                            
                                 <div class="col-md-6">
                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                        <input type="text" placeholder="Name" required>
+                                        <input type="text" name="user_name" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                                        <input type="email" placeholder="Email" required>
+                                        <input type="email" name="user_email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -889,15 +891,16 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single_input wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                                        <textarea name="" id="" cols="30" placeholder="Message" rows="10"
+                                        <textarea name="message" id="" cols="30" placeholder="Message" rows="10"
                                             required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="submit_btn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-                                        <input class="boxed-btn3" type="submit"></input>
+                                        <input class="boxed-btn3" type="submit" value="Send"></input>
                                     </div>
                                 </div>
+                            
                             </div>
                         </form>
                     </div>
@@ -913,25 +916,22 @@
 
                     <div class="col-xl-7 col-lg-7 wow fadeInUp col-md-9" style="    border-right-style: outset;">
                         <p class="bold">Phone number :</p>
-                        <p>(+237) 655 512 345</p>
-                        <p>(+237) 651 708 818</p>
-                        <p>(+237) 620 181 113</p>
-                        <p>codees@gmail.com</p>
+                        <p>(+237) 683 056 963</p>
+                        <p>(+237) 697 122 421</p>
+                        <p>(+237) 690 541 444</p>
+                        <p>codees.tech@gmail.com</p>
                         <div class="socail_links">
                             <ul>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" href="#"> <i
+                                <li><a class="wow fadeInUp" data-wow-duration="1s" target="_blank" data-wow-delay=".3s" href="https://www.facebook.com/dcodees"> <i
                                             class="fa fa-facebook"></i>
                                     </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" href="#"> <i
-                                            class="fa fa-twitter"></i>
-                                    </a></li>
-                                <li><a class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" href="#"> <i
+                                <li><a class="wow fadeInUp" data-wow-duration="1s" target="_blank" data-wow-delay=".5s" href="https://www.instagram.com/codeescmr"> <i
                                             class="fa fa-instagram"></i> </a></li>
 
                             </ul>
                         </div>
                     </div>
-
+                    
                     <div class="col-lg-5 col-md-12">
                         <div class="container-fluid equal-height  ">
                             <div class="mb-3">
@@ -940,10 +940,10 @@
                                     placeholder="Enter your Email">
 
                             </div>
-                            <button type="submit" class="btn btn-">Submit</button>
+                            <button type="submit" class="btn btn-outline-light text-white-50">Submit</button>
                         </div>
-
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -998,7 +998,7 @@
     <script>
 
         var typeText = document.querySelector(".typeText")
-        var textToBeTyped = "We Optimize Our Products To Satifsfy Your Clients"
+        var textToBeTyped = "We Optimize Our Products To Satisfy Your Needs"
         var index = 0, isAdding = true
 
         function playAnim() {
