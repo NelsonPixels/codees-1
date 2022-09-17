@@ -40,9 +40,9 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('service_1oqwqrm', 'contact_23df4', this)
                     .then(function() {
-                        console.log('SUCCESS!');
+                        alert('Your message has been send!!! \n Check your email');
                     }, function(error) {
-                        console.log('FAILED', error);
+                        alert('FAILED', error);
                     });
             });
         }
